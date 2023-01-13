@@ -1,0 +1,251 @@
+body {
+  background-color: hsl(36, 100%, 99%);
+  font-family: "Inter", sans-serif;
+  margin: 3rem 8.75rem 0;
+}
+.flex-container {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+}
+
+/* Navigation Section */
+.navbar {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 6.25rem;
+  width: 100%;
+}
+.nav-brand {
+  align-items: center;
+}
+.nav-list {
+  align-items: center;
+}
+.menu {
+  display: none;
+}
+.nav-items {
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: auto;
+  width: 100%;
+  list-style-type: none;
+}
+.sidenav {
+  display: none;
+}
+.nav-link {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.94rem;
+  text-decoration: none;
+  padding-left: 2.5rem;
+  display: block;
+}
+.nav-link:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+/* Middle Section */
+.mid-section {
+  grid-template-columns: 66.4% 29%;
+  gap: 1.9rem;
+  margin-top: 2%;
+}
+.mid-section-image {
+  flex-direction: column;
+}
+.mobile-img {
+  display: none;
+}
+.mid-image-text {
+  grid-template-columns: auto auto;
+  padding-top: 2rem;
+}
+.mid-section-header {
+  font-weight: 800;
+  font-size: 3.125rem;
+  letter-spacing: 0.063rem;
+  margin: 0;
+}
+.mid-section-paragraph {
+  color: hsl(236, 13%, 42%);
+  flex-direction: column;
+  margin: 0.63rem 0.63rem 0 0;
+  padding-right: 10px;
+}
+.mid-section-button {
+  text-align: center;
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.19rem;
+  border: none;
+  border-radius: 0;
+  margin-top: 2.1rem;
+  width: 10rem;
+  padding: 0.94rem;
+  text-decoration: none;
+}
+.mid-section-button:hover {
+  background-color: #000;
+  color: hsl(36, 100%, 99%);
+}
+.sidebar {
+  color: white;
+  flex-direction: column;
+  background-color: hsl(240, 100%, 5%);
+  width: 96%;
+  padding: 1rem;
+}
+.sidebar-header {
+  font-size: 2.2rem;
+  color: hsl(35, 77%, 62%);
+  margin: 0.63rem 0;
+}
+.sidebar-sub-header {
+  color: hsl(36, 100%, 99%);
+  margin: 1.1rem 0 0;
+}
+.sidebar-sub-header:hover {
+  color: hsl(35, 77%, 62%);
+}
+.sidebar-text {
+  color: hsl(233, 8%, 79%);
+  font-size: 0.94rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+}
+.top-border {
+  border-bottom: 0.1px solid hsl(236, 13%, 42%);
+  padding-bottom: 23px;
+}
+
+/* Bottom Section */
+.card {
+  grid-template-columns: auto auto auto;
+  justify-content: flex-start;
+  gap: 3.9rem;
+  margin-top: 4%;
+}
+.card-image {
+  width: 6.25rem;
+}
+.card-number {
+  color: hsl(233, 8%, 79%);
+  font-size: 1.75rem;
+}
+.card-header {
+  font-weight: 700;
+  margin-top: 0.63rem;
+}
+.card-header:hover {
+  color: hsl(5, 85%, 63%);
+}
+.card-body {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.81rem;
+}
+.card-text {
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  padding-left: 1.13rem;
+}
+
+/* Footer */
+.attribution {
+  font-size: 0.69rem;
+  text-align: center;
+  margin-top: 3.75rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1160px) {
+  .nav-link {
+    display: none;
+    padding: 0.9rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: hsl(36, 100%, 99%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: hsl(236, 13%, 42%);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  .sidenav-open {
+    width: 250px;
+  }
+  .sidenav .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 45px;
+  }
+  .toggleButton {
+    display: flex;
+    margin-top: 3rem;
+  }
+  .mid-section {
+    display: block;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .mid-image-text {
+    display: block;
+    margin-bottom: 50px;
+  }
+  /* Card Section */
+  .card {
+    display: block;
+    margin-top: 70px;
+  }
+  .card-group {
+    margin-top: 40px;
+  }
+  .card-text {
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  .card-number {
+    margin: 0;
+  }
+  .card-header {
+    margin: 0;
+  }
+  .card-body {
+    margin: 0;
+  }
+}
