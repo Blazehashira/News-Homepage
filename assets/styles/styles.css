@@ -249,3 +249,15 @@ body {
     margin: 0;
   }
 }
+
+@media (min-width: 540px) and (max-width: 913px) {
+  body {
+    margin: 2.3rem 4rem 0;
+  }
+}
+
+@media (max-width: 415px) {
+  body {
+    margin: 1rem 2rem 0;
+  }
+}
