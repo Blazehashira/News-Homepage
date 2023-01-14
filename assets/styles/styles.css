@@ -260,7 +260,7 @@ body {
 }
 
 /*Small screen*/
-@media (max-width: 415px) {
+@media (max-width: 429px) {
   body {
     margin: 1rem 2rem 0;
   }
