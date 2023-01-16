@@ -32,6 +32,7 @@ body {
   margin: auto;
   width: 100%;
   list-style-type: none;
+  padding-right: 1.4rem;
 }
 .sidenav {
   display: none;
@@ -99,7 +100,7 @@ body {
   color: white;
   flex-direction: column;
   background-color: hsl(240, 100%, 5%);
-  width: 96%;
+  width: auto;
   padding: 1rem;
 }
 .sidebar-header {
@@ -170,7 +171,6 @@ body {
 @media (max-width: 1160px) {
   .nav-link {
     display: none;
-    padding: 0.9rem;
   }
   .nav-list {
     flex-direction: column;
