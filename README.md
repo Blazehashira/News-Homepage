@@ -59,9 +59,9 @@ In this section I was able to practice the usage of CSS Grids and Flexbox. I was
 
 ### Useful resources
 
-- [Resource 1](https://www.w3schools.com/default.asp) - This is the resource I got to for documentation. The resource is great for how concise it is. I really like the insite editor with examples that show to use everything.
+- [https://www.w3schools.com/default.asp] - This is the resource I got to for documentation. The resource is great for how concise it is. I really like the insite editor with examples that show to use everything.
 
 ## Author
 
-- Website - [Nasir Mohammed Sani](https://www.your-site.com)
+- Website - [Nasir Mohammed Sani]
 - Frontend Mentor - [@Blazehashira](https://www.frontendmentor.io/profile/Blazehashira)
